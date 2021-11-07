@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const url='http://192.168.1.17:5000/posts';
-const loginUrl='http://192.168.1.17:5000/users'
+const url='https://graffiti-backend.herokuapp.com/posts';
+const loginUrl='https://graffiti-backend.herokuapp.com/users'
 export const fetchPosts = () => axios.get(url);
 export const createPosts=(newPost)=>axios.post(url, newPost);
 export const deletePost=(post)=>axios.post(url+"/"+post._id+"/delete");
