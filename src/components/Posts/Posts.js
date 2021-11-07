@@ -11,14 +11,14 @@ const Posts =({currentId, setCurrentId, userId, setUser, notificPush })=>{
    // console.log(posts);
     const classes = useStyles();
     return(
-        (
+        !posts.length?<CircularProgress/>:(
             <Grid className={classes.container} container alignItems="flex-start" spacing={3}>
                 <Grid item xs={12} sm={4}>
                 <Form currentId={currentId} setCurrentId={setCurrentId} userId={userId} /></Grid>
                 {posts.map((post)=>(
-                    !posts.length?<CircularProgress className="circular Progress"/>:(<Grid key={post._id} item xs={12} sm={4} >
+                    <Grid key={post._id} item xs={12} sm={4} >
                         <Post currentId={currentId} setCurrentId={setCurrentId} userId={userId} post={post} notificPush={notificPush}/>
-                    </Grid>)
+                    </Grid>
                 ))}
             </Grid>
         )
