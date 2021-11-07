@@ -1,0 +1,39 @@
+.Modal{
+    position: fixed;
+    z-index: 199;
+    padding:40px;
+    width:300px;
+    border-radius:20px !important;
+    font-family: 'Roboto', sans-serif;
+    top:25%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.subTitle{
+    text-align: center;
+}
+.wrongPass{
+    text-align: center;
+    color:red;
+}
+.modalContainer2{
+    height: 100%;
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 43, 43, 0.447);
+    position: fixed;
+    
+    z-index: 2099;
+    top:0px;
+}
+.closeBtn{
+    position: absolute !important;
+    right:10px;
+    top:0px;
+}
