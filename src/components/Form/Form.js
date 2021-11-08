@@ -68,7 +68,7 @@ const Form =({currentId, setCurrentId, userId})=>{
         <Paper className={classes.Paper}>
             <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} id="mainForm" onSubmit={handleSubmit}>
                 <Typography variant="h6">
-                    Write Somethin
+                    Write Something
                 </Typography>
                 <TextField name="creator" variant="outlined" label="Creator"  disabled={(userId)?true:false}   fullWidth value={postData.creator} onChange={(e)=> {console.log("VALUE: ",e.value);setPostData({... postData, creator:e.target.value})}}/>
                 <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={(e)=> setPostData({... postData, title:e.target.value})}/>
